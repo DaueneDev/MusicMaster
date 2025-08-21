@@ -13,13 +13,15 @@ export const SecurePaymentSection = () => (
             <ShieldCheck className="h-12 w-12 text-blue-700" />
           </span>
         </div>
-        <span className="mt-2 text-green-700 font-semibold text-lg tracking-wide">Ambiente Protegido</span>
+        <span className="mt-2 text-green-700 font-semibold text-lg tracking-wide">Processo Seguro</span>
       </div>
       <div className="flex-1 text-center md:text-left">
-        <h3 className="text-3xl font-extrabold text-gray-800 mb-3">Pagamento Seguro e Criptografado</h3>
+        <h3 className="text-3xl font-extrabold text-gray-800 mb-3">
+            Paguamento com Confiança
+        </h3>
         <p className="text-gray-700 mb-6 text-lg">
-          Todas as transações são processadas de forma segura pelo <span className="font-bold text-green-700">MozPayments</span>.<br className="hidden md:block" />
-          Você pode pagar com confiança que vai receber o acesso ao curso.
+           Você pode pagar com confiança que vai receber o acesso ao curso.
+        Fique tranquilo, este não é um golpe: você não sofrerá nenhuma fraude. Mais de 100 pessoas em todo Moçambique já compraram nossos cursos e receberam acesso normalmente. Temos isso registrado e podemos provar. Se desejar, pode solicitar essas provas e teremos o prazer de lhe apresentar.
         </p>
         <div className="flex items-center justify-center md:justify-start gap-8 mt-4">
           <img
@@ -30,6 +32,11 @@ export const SecurePaymentSection = () => (
           <img
             src="/Emola.png"
             alt="Emola logo"
+            className="h-14 w-32 object-contain bg-white rounded-lg border border-gray-300 shadow-md p-2"
+          />
+          <img
+            src="/Ponto24.png"
+            alt="Ponto24 logo"
             className="h-14 w-32 object-contain bg-white rounded-lg border border-gray-300 shadow-md p-2"
           />
         </div>

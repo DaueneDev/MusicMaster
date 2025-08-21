@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
 export const FAQSection = () => {
-  const faqs = [{
+  const faqs = [
+    {
     question: '1. Como recebo as aulas?',
     answer: "As aulas são enviadas por link após o pagamento. Você pode assistir pelo celular ou computador, sempre que quiser."
   }, {
@@ -15,10 +16,10 @@ export const FAQSection = () => {
     answer: 'Claro! Se já tens noção básica, vais encontrar técnicas avançadas, riffs, solos e recursos que vão elevar o teu nível de forma consistente.'
   }, {
     question: '5. Qual o preço do curso?',
-    answer: 'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 399 MT por tempo limitado. É um pagamento único com acesso vitalício.'
+    answer: 'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 319 MT por tempo limitado. É um pagamento único com acesso vitalício.'
   }, {
     question: '6. Como posso pagar?',
-    answer: 'Aceitamos pagamentos por M-Pesa e e-Mola. Após o pagamento, basta enviar o comprovativo. Você receberá o link para as aulas por WhatsApp.'
+    answer: 'Aceitamos pagamentos por M-Pesa, E-Mola e Ponto 24. Após o pagamento, basta enviar o comprovativo. Você receberá o link para as aulas por WhatsApp.'
   },
   {
     question: '7. Existe suporte ou acompanhamento após a compra?',
@@ -37,7 +38,11 @@ export const FAQSection = () => {
 {
     question: '11. Por quanto tempo terei acesso as aulas?',
     answer: 'Você vai ter acesso ao curso por tempo indeterminado, ou seja vitalício.'
-  }];
+  },
+{
+      question: '12.Por que o curso está em promoção e com um preço tão acessível?',
+      answer: 'Nosso objetivo é ajudar o maior número possível de pessoas a ter acesso a conhecimento de qualidade por um preço que realmente conseguem pagar. Sabemos que a maioria das pessoas em Moçambique não tem uma boa capacidade financeira, mas quer aprender e crescer. Por isso, tornamos o curso acessível para que ninguém fique de fora.'
+    },];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

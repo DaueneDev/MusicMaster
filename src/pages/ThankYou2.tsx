@@ -1,10 +1,19 @@
 import { useLocation } from 'react-router-dom';
+import React from 'react';
 // import { CourseLayout } from '../components/CourseLayout';
 import { CheckCircle } from 'lucide-react';
 export function ThankYou() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const courseName = queryParams.get('curso');
+  // Facebook Pixel: track conversion event
+  React.useEffect(() => {
+    // @ts-ignore
+    if (window.fbq) {
+      // @ts-ignore
+      window.fbq('track', 'Purchase');
+    }
+  }, []);
   return (
     <div className="bg-gray-50 py-16 px-4 min-h-screen flex items-center justify-center">
       <div className="max-w-3xl mx-auto text-center">

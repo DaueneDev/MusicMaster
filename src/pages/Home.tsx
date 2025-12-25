@@ -30,6 +30,18 @@ const Home = () => {
     price: '250MT',
     originalPrice: '1997MT',
     link: '/curso-contrabaixo'
+  }, {
+    title: 'Curso de Guitarra - Jazz',
+    image: 'https://unsplash.com/photos/XV9F-gfmThs/download?force=true&w=1920',
+    price: '319MT',
+    originalPrice: '1997MT',
+    link: '/curso-guitarra-jazz'
+  }, {
+    title: 'Curso de Guitarra - Blues',
+    image: 'https://unsplash.com/photos/JS-l3dLb8eQ/download?force=true&w=1920',
+    price: '319MT',
+    originalPrice: '1997MT',
+    link: '/curso-guitarra-blues'
   }];
   return <div className="w-full bg-gradient-to-b from-black to-gray-900 text-white">
       {/* Hero Section */}

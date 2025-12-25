@@ -5,6 +5,8 @@ import { MainPage as ClassicalMain, PaymentsPage as ClassicalPayments, ThankyouP
 import { MainPage as PianoMain, PaymentsPage as PianoPayments, ThankyouPage as PianoThankyou } from './pages/AppPiano';
 import { MainPage as CantoMain, PaymentsPage as CantoPayments, ThankyouPage as CantoThankyou } from './pages/AppCanto';
 import { MainPage as ContrabaixoMain, PaymentsPage as ContrabaixoPayments, ThankyouPage as ContrabaixoThankyou } from './pages/AppContrabaixo';
+import { MainPage as JazzMain, PaymentsPage as JazzPayments, ThankyouPage as JazzThankyou } from './pages/AppJazz';
+import { MainPage as BluesMain, PaymentsPage as BluesPayments, ThankyouPage as BluesThankyou } from './pages/AppBlues';
 export function App() {
   return <BrowserRouter>
       <div className="flex flex-col min-h-screen">
@@ -26,6 +28,12 @@ export function App() {
             <Route path="/curso-contrabaixo" element={<ContrabaixoMain />} />
             <Route path="/curso-contrabaixo/pagamento" element={<ContrabaixoPayments />} />
             <Route path="/curso-contrabaixo/obrigado" element={<ContrabaixoThankyou />} />
+            <Route path="/curso-guitarra-jazz" element={<JazzMain />} />
+            <Route path="/curso-guitarra-jazz/pagamento" element={<JazzPayments />} />
+            <Route path="/curso-guitarra-jazz/obrigado" element={<JazzThankyou />} />
+            <Route path="/curso-guitarra-blues" element={<BluesMain />} />
+            <Route path="/curso-guitarra-blues/pagamento" element={<BluesPayments />} />
+            <Route path="/curso-guitarra-blues/obrigado" element={<BluesThankyou />} />
           </Routes>
         </main>
       </div>

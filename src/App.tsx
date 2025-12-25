@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import { MainPage as ElectricMain, PaymentsPage as ElectricPayments, ThankyouPage as ElectricThankyou } from './pages/AppElectrica';
@@ -7,9 +8,64 @@ import { MainPage as CantoMain, PaymentsPage as CantoPayments, ThankyouPage as C
 import { MainPage as ContrabaixoMain, PaymentsPage as ContrabaixoPayments, ThankyouPage as ContrabaixoThankyou } from './pages/AppContrabaixo';
 import { MainPage as JazzMain, PaymentsPage as JazzPayments, ThankyouPage as JazzThankyou } from './pages/AppJazz';
 import { MainPage as BluesMain, PaymentsPage as BluesPayments, ThankyouPage as BluesThankyou } from './pages/AppBlues';
+
+type TimeLeft = {
+  totalMs: number;
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+const getTimeLeft = (endsAt: Date): TimeLeft => {
+  const totalMs = Math.max(0, endsAt.getTime() - Date.now());
+  const totalSeconds = Math.floor(totalMs / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  return {
+    totalMs,
+    days,
+    hours,
+    minutes,
+    seconds,
+  };
+};
+
+const pad2 = (n: number) => String(n).padStart(2, '0');
 export function App() {
+  const promoEndsAt = useMemo(() => {
+    const now = new Date();
+    return new Date(now.getFullYear(), 11, 31, 23, 59, 59);
+  }, []);
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(promoEndsAt));
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setTimeLeft(getTimeLeft(promoEndsAt));
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, [promoEndsAt]);
+  const promoEnded = timeLeft.totalMs <= 0;
+
   return <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
+      <div className="fixed top-0 left-0 right-0 z-50 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-black">
+        <div className="container mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
+          <div className="font-bold tracking-wide text-sm md:text-base text-center md:text-left">
+            Promoção de Fim de Ano: entra em 2026 tocando e cantando com confiança
+          </div>
+          <div className="bg-black/15 rounded-full px-4 py-1 text-sm font-semibold">
+            {promoEnded ? (
+              <span>Promoção encerrada</span>
+            ) : (
+              <span>
+                Termina em: {timeLeft.days}d {pad2(timeLeft.hours)}:{pad2(timeLeft.minutes)}:{pad2(timeLeft.seconds)}
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col min-h-screen pt-24 md:pt-16">
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,45 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
 import CourseCard from '../components/CourseCard';
-
-type TimeLeft = {
-  totalMs: number;
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-};
-
-const getTimeLeft = (endsAt: Date): TimeLeft => {
-  const totalMs = Math.max(0, endsAt.getTime() - Date.now());
-  const totalSeconds = Math.floor(totalMs / 1000);
-  const days = Math.floor(totalSeconds / 86400);
-  const hours = Math.floor((totalSeconds % 86400) / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
-  return {
-    totalMs,
-    days,
-    hours,
-    minutes,
-    seconds,
-  };
-};
-
-const pad2 = (n: number) => String(n).padStart(2, '0');
 const Home = () => {
-  const promoEndsAt = useMemo(() => {
-    const now = new Date();
-    return new Date(now.getFullYear(), 11, 31, 23, 59, 59);
-  }, []);
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(promoEndsAt));
-  useEffect(() => {
-    const id = window.setInterval(() => {
-      setTimeLeft(getTimeLeft(promoEndsAt));
-    }, 1000);
-    return () => window.clearInterval(id);
-  }, [promoEndsAt]);
-  const promoEnded = timeLeft.totalMs <= 0;
-
   const courses = [{
     title: 'Curso de Guitarra Eléctrica',
     image: 'https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
@@ -84,22 +44,6 @@ const Home = () => {
     link: '/curso-guitarra-blues'
   }];
   return <div className="w-full bg-gradient-to-b from-black to-gray-900 text-white">
-      <div className="w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-black">
-        <div className="container mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
-          <div className="font-bold tracking-wide text-sm md:text-base text-center md:text-left">
-            Promoção de Fim de Ano: entra em 2026 tocando e cantando com confiança
-          </div>
-          <div className="bg-black/15 rounded-full px-4 py-1 text-sm font-semibold">
-            {promoEnded ? (
-              <span>Promoção encerrada</span>
-            ) : (
-              <span>
-                Termina em: {timeLeft.days}d {pad2(timeLeft.hours)}:{pad2(timeLeft.minutes)}:{pad2(timeLeft.seconds)}
-              </span>
-            )}
-          </div>
-        </div>
-      </div>
       {/* Hero Section */}
       <div className="w-full bg-cover bg-center py-24 px-6" style={{
       backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",

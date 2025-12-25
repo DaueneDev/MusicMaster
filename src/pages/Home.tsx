@@ -3,27 +3,33 @@ const Home = () => {
   const courses = [{
     title: 'Curso de Guitarra Eléctrica',
     image: 'https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    price: '319MT',
+    price: '250MT',
     originalPrice: '1997MT',
     link: '/curso-guitarra-electrica'
   }, {
     title: 'Curso de Guitarra Acústica',
     image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    price: '319MT',
+    price: '250MT',
     originalPrice: '1997MT',
     link: '/curso-guitarra-acustica'
   }, {
     title: 'Curso de Piano e Teclado',
     image: 'https://images.unsplash.com/photo-1552422535-c45813c61732?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    price: '319MT',
+    price: '250MT',
     originalPrice: '1997MT',
     link: '/curso-piano'
   }, {
     title: 'Curso de Canto e Melhoria da Voz',
     image: 'https://images.unsplash.com/photo-1638389746430-82c12a2d0bb2?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=emmanuel-ikwuegbu-n_qhPU-nsyc-unsplash.jpg',
-    price: '319MT',
+    price: '250MT',
     originalPrice: '1997MT',
     link: '/curso-canto-voz'
+  }, {
+    title: 'Curso de Contrabaixo',
+    image: 'https://unsplash.com/photos/fd47bVxHzVc/download?force=true&w=1920',
+    price: '250MT',
+    originalPrice: '1997MT',
+    link: '/curso-contrabaixo'
   }];
   return <div className="w-full bg-gradient-to-b from-black to-gray-900 text-white">
       {/* Hero Section */}

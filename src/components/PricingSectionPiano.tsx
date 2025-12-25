@@ -23,7 +23,7 @@ export const PricingSection = () => {
                       1997 MT
                     </span>
                     <span className="text-[#3c2415] text-4xl font-bold">
-                      319 MT
+                      250 MT
                     </span>
                   </div>
                   <div className="text-[#3c2415] mt-1 text-sm font-semibold">

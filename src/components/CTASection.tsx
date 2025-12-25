@@ -8,7 +8,7 @@ export const CTASection = () => {
         <p className="text-xl mb-8 max-w-3xl mx-auto text-white">
           Chegou a tua vez que tocar guitarra como deve ser. Aproveite o preço promocional de{' '}
           <span className="line-through">1997 MT</span> apenas{' '}
-          <span className="font-bold">319 MT</span>.
+          <span className="font-bold">250 MT</span>.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
               <a

@@ -9,7 +9,7 @@ export const CTASection = () => {
           Chega de cantar apenas no chuveiro ou com insegurança.
 Este é o momento de aprender a cantar como sempre sonhaste. De{' '}
           <span className="line-through">1997 MT</span> para apenas{' '}
-          <span className="font-bold">319 MT</span>.
+          <span className="font-bold">250 MT</span>.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
               <a

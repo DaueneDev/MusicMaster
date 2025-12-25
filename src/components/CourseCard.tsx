@@ -32,7 +32,7 @@ const CourseCard = ({
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-colors shadow-lg"
         >
-          Quero o Curso de {courseName}
+          Ver o Curso de {courseName}
         </Link>
       </div>
     </div>;

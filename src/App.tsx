@@ -37,7 +37,7 @@ const pad2 = (n: number) => String(n).padStart(2, '0');
 export function App() {
   const promoEndsAt = useMemo(() => {
     const now = new Date();
-    return new Date(now.getFullYear(), 11, 31, 23, 59, 59);
+    return new Date(now.getFullYear(), 1, 6, 23, 59, 59);
   }, []);
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(promoEndsAt));
   useEffect(() => {
@@ -52,7 +52,7 @@ export function App() {
       <div className="fixed top-0 left-0 right-0 z-50 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-black">
         <div className="container mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="font-bold tracking-wide text-sm md:text-base text-center md:text-left">
-            Promoção de Fim de Ano: entra em 2026 tocando e cantando com confiança
+            Promoção de Início do Ano: entra em 2026 tocando e cantando com confiança
           </div>
           <div className="bg-black/15 rounded-full px-4 py-1 text-sm font-semibold">
             {promoEnded ? (

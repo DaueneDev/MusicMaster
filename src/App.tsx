@@ -37,7 +37,9 @@ const pad2 = (n: number) => String(n).padStart(2, '0');
 export function App() {
   const promoEndsAt = useMemo(() => {
     const now = new Date();
-    return new Date(now.getFullYear(), 1, 6, 23, 59, 59);
+    const thisYearEndsAt = new Date(now.getFullYear(), 11, 31, 23, 59, 59);
+    if (thisYearEndsAt.getTime() > now.getTime()) return thisYearEndsAt;
+    return new Date(now.getFullYear() + 1, 11, 31, 23, 59, 59);
   }, []);
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(promoEndsAt));
   useEffect(() => {
@@ -46,22 +48,18 @@ export function App() {
     }, 1000);
     return () => window.clearInterval(id);
   }, [promoEndsAt]);
-  const promoEnded = timeLeft.totalMs <= 0;
+  const alwaysPositiveTimeLeft = timeLeft.totalMs <= 0 ? getTimeLeft(new Date(new Date().getFullYear() + 1, 11, 31, 23, 59, 59)) : timeLeft;
 
   return <BrowserRouter>
       <div className="fixed top-0 left-0 right-0 z-50 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-black">
         <div className="container mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="font-bold tracking-wide text-sm md:text-base text-center md:text-left">
-            Promoção de Início do Ano: entra em 2026 tocando e cantando com confiança
+            Promoção de Fim de Ano: entra em 2026 tocando e cantando com confiança
           </div>
           <div className="bg-black/15 rounded-full px-4 py-1 text-sm font-semibold">
-            {promoEnded ? (
-              <span>Promoção encerrada</span>
-            ) : (
-              <span>
-                Termina em: {timeLeft.days}d {pad2(timeLeft.hours)}:{pad2(timeLeft.minutes)}:{pad2(timeLeft.seconds)}
-              </span>
-            )}
+            <span>
+              Termina em: {alwaysPositiveTimeLeft.days}d {pad2(alwaysPositiveTimeLeft.hours)}:{pad2(alwaysPositiveTimeLeft.minutes)}:{pad2(alwaysPositiveTimeLeft.seconds)}
+            </span>
           </div>
         </div>
       </div>

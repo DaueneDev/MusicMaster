@@ -25,7 +25,7 @@ export const FAQSection = () => {
     {
       question: '5. Qual o preço do curso?',
       answer:
-        'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 250 MT por tempo limitado. É um pagamento único com acesso vitalício.',
+        'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 300 MT por tempo limitado. É um pagamento único com acesso vitalício.',
     },
     {
       question: '6. Como posso pagar?',

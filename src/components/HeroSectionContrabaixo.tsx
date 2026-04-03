@@ -26,7 +26,7 @@ export const HeroSection = () => {
               </div>
               <div className="flex items-center gap-4">
                 <span className="text-[#3c2415] text-lg line-through">1997 MT</span>
-                <span className="text-[#3c2415] text-3xl font-bold">250 MT</span>
+                <span className="text-[#3c2415] text-3xl font-bold">300 MT</span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">

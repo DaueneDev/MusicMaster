@@ -6,7 +6,7 @@ export const CTASection = () => {
         <h2 className="text-3xl font-bold mb-6 text-[#e8b05c]">Pronto para tocar jazz com elegância?</h2>
         <p className="text-xl mb-8 max-w-3xl mx-auto text-white">
           Sai do básico e entra no mundo dos acordes sofisticados e do improviso. De{' '}
-          <span className="line-through">1997 MT</span> apenas <span className="font-bold">319 MT</span>.
+          <span className="line-through">1997 MT</span> apenas <span className="font-bold">300 MT</span>.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
           <a

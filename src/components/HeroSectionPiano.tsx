@@ -29,7 +29,7 @@ Descobre como dominar acordes, ritmos e músicas completas em pouco tempo, com u
                   1997 MT
                 </span>
                 <span className="text-[#3c2415] text-3xl font-bold">
-                  250 MT
+                  300 MT
                 </span>
               </div>
             </div>

@@ -20,7 +20,7 @@ export const PricingSection = () => {
                 <div className="bg-[#e8b05c] inline-block px-8 py-4 mb-6 rounded">
                   <div className="flex items-center justify-center gap-6">
                     <span className="text-[#3c2415] text-xl line-through">1997 MT</span>
-                    <span className="text-[#3c2415] text-4xl font-bold">319 MT</span>
+                    <span className="text-[#3c2415] text-4xl font-bold">300 MT</span>
                   </div>
                   <div className="text-[#3c2415] mt-1 text-sm font-semibold">APENAS HOJE</div>
                 </div>

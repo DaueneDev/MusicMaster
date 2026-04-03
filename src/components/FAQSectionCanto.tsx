@@ -16,7 +16,7 @@ export const FAQSection = () => {
     answer: 'Sim! A afinação é uma habilidade que pode ser treinada. Mesmo que hoje aches que “não tens ouvido” ou “nasceu desafinado”, com os exercícios do curso vais aprender a ouvir melhor e controlar a tua voz para cantar afinado.'
   }, {
     question: '5. Qual o preço do curso?',
-    answer: 'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 399 MT por tempo limitado. É um pagamento único com acesso vitalício.'
+    answer: 'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 300 MT por tempo limitado. É um pagamento único com acesso vitalício.'
   }, {
     question: '6. Como posso pagar?',
     answer: 'Aceitamos pagamentos por M-Pesa, E-Mola e Ponto 24. Após o pagamento, basta enviar o comprovativo. Você receberá o link para as aulas por WhatsApp.'

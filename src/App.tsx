@@ -54,12 +54,7 @@ export function App() {
       <div className="fixed top-0 left-0 right-0 z-50 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-black">
         <div className="container mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="font-bold tracking-wide text-sm md:text-base text-center md:text-left">
-            Promoção de Fim de Ano: entra em 2026 tocando e cantando com confiança
-          </div>
-          <div className="bg-black/15 rounded-full px-4 py-1 text-sm font-semibold">
-            <span>
-              Termina em: {alwaysPositiveTimeLeft.days}d {pad2(alwaysPositiveTimeLeft.hours)}:{pad2(alwaysPositiveTimeLeft.minutes)}:{pad2(alwaysPositiveTimeLeft.seconds)}
-            </span>
+            Promoção de 2026 para tocar e cantar com confiança
           </div>
         </div>
       </div>

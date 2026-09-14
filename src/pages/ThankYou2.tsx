@@ -27,18 +27,8 @@ export function ThankYou() {
         </h1>
         <p className="text-xl text-gray-700 mb-8">
           Você acaba de garantir o acesso ao curso <span className="font-bold">{courseName}</span>.<br />
-          Agora, para receber seu acesso, volte para o WhatsApp e envie uma mensagem para nossa equipe.
+          Em breve você receberá um email com o guia em PDF contendo o acesso às videoaulas do curso.
         </p>
-        <div className="space-y-4">
-          <a
-            href="https://wa.me/258844948189"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md shadow-lg text-lg"
-          >
-            Voltar para o WhatsApp e Receber Acesso
-          </a>
-        </div>
       </div>
     </div>
   );

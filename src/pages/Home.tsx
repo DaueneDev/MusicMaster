@@ -30,18 +30,6 @@ const Home = () => {
     price: '300MT',
     originalPrice: '1997MT',
     link: '/curso-contrabaixo'
-  }, {
-    title: 'Curso de Guitarra - Jazz',
-    image: 'https://unsplash.com/photos/XV9F-gfmThs/download?force=true&w=1920',
-    price: '300MT',
-    originalPrice: '1997MT',
-    link: '/curso-guitarra-jazz'
-  }, {
-    title: 'Curso de Guitarra - Blues',
-    image: 'https://unsplash.com/photos/JS-l3dLb8eQ/download?force=true&w=1920',
-    price: '300MT',
-    originalPrice: '1997MT',
-    link: '/curso-guitarra-blues'
   }];
   return <div className="w-full bg-gradient-to-b from-black to-gray-900 text-white">
       {/* Hero Section */}
@@ -67,14 +55,6 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#courses" className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors shadow-lg">
               Ver Cursos com Desconto
-            </a>
-            <a
-              href="https://wa.me/258844948189?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o%20de%20fim%20de%20ano%20e%20preciso%20de%20ajuda%20para%20escolher%20o%20curso."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/10 hover:bg-white/15 border border-white/25 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors shadow-lg"
-            >
-              Falar no WhatsApp
             </a>
           </div>
         </div>

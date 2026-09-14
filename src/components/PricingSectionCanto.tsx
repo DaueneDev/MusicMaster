@@ -42,16 +42,6 @@ export const PricingSection = () => {
                       <span className="ml-3 text-white">{feature}</span>
                     </li>)}
                 </ul>
-                <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
-              <a
-                href="https://wa.me/258844948189?text=Ol%C3%A1%2C%20quero%20come%C3%A7ar%20agora%20com%20o%20curso%20de%20Canto%20e%20Melhora%20da%20Voz."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 text-white px-8 py-3 rounded-md font-bold hover:bg-green-700 transition duration-300 flex items-center justify-center text-lg shadow-lg"
-              >
-                Começar Agora
-              </a>
-            </div>
               </div>
             </div>
           </div>

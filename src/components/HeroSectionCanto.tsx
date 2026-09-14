@@ -19,6 +19,7 @@ export const HeroSection = () => {
             <p className="text-xl mb-8 text-white">
               Descobre o poder da tua voz! Aprende a cantar com técnica, confiança e emoção através de aulas práticas para iniciantes e avançados.
               Assiste no celular, tablet ou computador no teu próprio ritmo.
+              Após a compra, receberás um email com o guia em PDF contendo o acesso às videoaulas.
             </p>
             <div className="bg-[#e8b05c] inline-block px-6 py-2 mb-8 relative">
               <div className="absolute top-0 right-0 bg-red-500 text-white text-xs px-2 py-1 -mt-3 -mr-2 rounded">
@@ -32,16 +33,6 @@ export const HeroSection = () => {
                   300 MT
                 </span>
               </div>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a
-                href="https://wa.me/258844948189?text=Ol%C3%A1%2C%20quero%20come%C3%A7ar%20agora%20com%20o%20curso%20de%20Canto%20e%20Melhora%20da%20Voz."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 text-white px-8 py-3 rounded-md font-bold hover:bg-green-700 transition duration-300 flex items-center justify-center text-lg shadow-lg"
-              >
-                Começar Agora
-              </a>
             </div>
           </div>
           <div className="md:w-1/2">

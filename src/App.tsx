@@ -77,12 +77,6 @@ export function App() {
             <Route path="/curso-contrabaixo" element={<ContrabaixoMain />} />
             <Route path="/curso-contrabaixo/pagamento" element={<ContrabaixoPayments />} />
             <Route path="/curso-contrabaixo/obrigado" element={<ContrabaixoThankyou />} />
-            <Route path="/curso-guitarra-jazz" element={<JazzMain />} />
-            <Route path="/curso-guitarra-jazz/pagamento" element={<JazzPayments />} />
-            <Route path="/curso-guitarra-jazz/obrigado" element={<JazzThankyou />} />
-            <Route path="/curso-guitarra-blues" element={<BluesMain />} />
-            <Route path="/curso-guitarra-blues/pagamento" element={<BluesPayments />} />
-            <Route path="/curso-guitarra-blues/obrigado" element={<BluesThankyou />} />
           </Routes>
         </main>
       </div>

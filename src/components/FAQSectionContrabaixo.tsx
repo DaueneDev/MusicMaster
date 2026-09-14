@@ -6,7 +6,7 @@ export const FAQSection = () => {
     {
       question: '1. Como recebo as aulas?',
       answer:
-        'As aulas são enviadas por link após o pagamento. Você pode assistir pelo celular ou computador, sempre que quiser.',
+        'Após a compra, você receberá um email com o guia em PDF contendo o acesso às videoaulas. Você pode assistir pelo celular ou computador, sempre que quiser.',
     },
     {
       question: '2. As aulas são ao vivo?',
@@ -30,7 +30,7 @@ export const FAQSection = () => {
     {
       question: '6. Como posso pagar?',
       answer:
-        'Aceitamos pagamentos por M-Pesa, E-Mola e Ponto 24. Após o pagamento, basta enviar o comprovativo. Você receberá o link para as aulas por WhatsApp.',
+        'Aceitamos pagamentos por M-Pesa, E-Mola e Ponto 24. Após o pagamento, você receberá um email com o guia em PDF contendo o acesso às videoaulas.',
     },
     {
       question: '7. Preciso de amplificador para praticar?',

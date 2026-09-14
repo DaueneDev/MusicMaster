@@ -4,7 +4,7 @@ export const FAQSection = () => {
   const faqs = [
     {
     question: '1. Como recebo as aulas?',
-    answer: "As aulas são enviadas por link após o pagamento. Você pode assistir pelo celular ou computador, sempre que quiser."
+    answer: "Após a compra, você receberá um email com o guia em PDF contendo o acesso às videoaulas. Você pode assistir pelo celular ou computador, sempre que quiser."
   }, {
     question: '2. As aulas são ao vivo?',
     answer: 'Não. As aulas são gravadas e você pode assistir no seu ritmo, quantas vezes quiser.'
@@ -19,7 +19,7 @@ export const FAQSection = () => {
     answer: 'O curso custa normalmente 1997 MT, mas está com preço promocional de apenas 300 MT por tempo limitado. É um pagamento único com acesso vitalício.'
   }, {
     question: '6. Como posso pagar?',
-    answer: 'Aceitamos pagamentos por M-Pesa, E-Mola e Ponto 24. Após o pagamento, basta enviar o comprovativo. Você receberá o link para as aulas por WhatsApp.'
+    answer: 'Aceitamos pagamentos por M-Pesa, E-Mola e Ponto 24. Após o pagamento, você receberá um email com o guia em PDF contendo o acesso às videoaulas.'
   },
   {
     question: '7. Existe suporte ou acompanhamento após a compra?',

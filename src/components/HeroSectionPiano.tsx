@@ -34,6 +34,16 @@ Após a compra, receberás um email com o guia em PDF contendo o acesso às vide
                 </span>
               </div>
             </div>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <a
+                href="https://checkout.escalepay.com/9159694"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-8 py-3 rounded-md font-bold hover:bg-green-700 transition duration-300 flex items-center justify-center text-lg shadow-lg"
+              >
+                Começar Agora
+              </a>
+            </div>
           </div>
           <div className="md:w-1/2">
             <div className="relative">

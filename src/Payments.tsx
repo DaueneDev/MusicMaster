@@ -6,7 +6,7 @@ export function Payments({ onConfirm }: { onConfirm: () => void; onBack: () => v
       <h2 className="text-2xl font-bold mb-4">Pagamento</h2>
       <p className="mb-6 text-center max-w-md">Clique no botão abaixo para confirmar que você realizou o pagamento.</p>
       <button
-        className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition mb-4"
+        className="px-8 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition mb-4 animate-wiggle"
         onClick={onConfirm}
       >
         Confirmar Pagamento

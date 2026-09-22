@@ -6,8 +6,7 @@ import { MainPage as ClassicalMain, PaymentsPage as ClassicalPayments, ThankyouP
 import { MainPage as PianoMain, PaymentsPage as PianoPayments, ThankyouPage as PianoThankyou } from './pages/AppPiano';
 import { MainPage as CantoMain, PaymentsPage as CantoPayments, ThankyouPage as CantoThankyou } from './pages/AppCanto';
 import { MainPage as ContrabaixoMain, PaymentsPage as ContrabaixoPayments, ThankyouPage as ContrabaixoThankyou } from './pages/AppContrabaixo';
-import { MainPage as JazzMain, PaymentsPage as JazzPayments, ThankyouPage as JazzThankyou } from './pages/AppJazz';
-import { MainPage as BluesMain, PaymentsPage as BluesPayments, ThankyouPage as BluesThankyou } from './pages/AppBlues';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 type TimeLeft = {
   totalMs: number;
@@ -80,5 +79,6 @@ export function App() {
           </Routes>
         </main>
       </div>
+      <WhatsAppButton />
     </BrowserRouter>;
 }

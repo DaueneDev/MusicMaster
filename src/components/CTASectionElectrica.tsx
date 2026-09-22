@@ -16,7 +16,7 @@ export const CTASection = () => {
             href="https://checkout.escalepay.com/9643584"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-600 text-white px-8 py-3 rounded-md font-bold hover:bg-green-700 transition duration-300 flex items-center justify-center text-lg shadow-lg"
+            className="bg-green-600 text-white px-10 py-3 rounded-md font-bold hover:bg-green-700 transition duration-300 flex items-center justify-center text-lg shadow-lg animate-wiggle"
           >
             Começar Agora
           </a>
